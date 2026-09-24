@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEF1CF;
+    color: #301208;
+    font-family: "Neue Haas Grotesk Display Pro", Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.navegacion {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.navegacion a {
+    color: #301208;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.logo {
+    font-family: "Joti One", serif;
+    color: #F25D33 !important;
+    text-decoration: none;
+    font-size: 3em !important;
+}
+
+
+.hero {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.hero-imagen {
+    width: 55%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+}
+
+.hero h1 {
+    font-family: "Joti One", serif;
+    color: #F25D33;
+    font-size: 3em;
+    margin-top: 5px;
+}
+
+.bajada-hero {
+    color: #F25D33;
+    margin: 8px 0 20px;
+    font-size: 1em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #CD7397;
+    color: #301208;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 0.8em;
+}
+
+.boton-chico {
+    padding: 8px 25px;
+}
+
+.sobre-peak {
+    width: 100%;
+}
+
+.fondo-derretido {
+    width: 100%;
+    background-image: url("img-/derretido-marron.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.contenido-sobre {
+    width: 85%;
+    min-height: 420px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bocha {
+    width: 130px;
+}
+
+.bochas-izquierda,
+.bochas-derecha {
+    width: 20%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.texto-sobre {
+    width: 42%;
+    color: #FEF1CF;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+.productos {
+    width: 90%;
+    margin: auto;
+
+    padding: 70px 0;
+
+    text-align: center;
+}
+
+.productos h2 {
+    font-family: "Joti One", serif;
+    color: #F25D33;
+
+    font-size: 2em;
+}
+
+.subtitulo {
+    color: #F25D33;
+    margin: 7px 0 12px;
+}
+
+.contenedor-productos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.producto {
+    width: 23%;
+}
+
+.producto img {
+    width: 75%;
+}
+
+.producto h3 {
+    color: #F25D33;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.producto p {
+    color: #F25D33;
+    font-size: 0.9em;
+}
+
+.franja-colores {
+    width: 100%;
+    display: block;
+}
+
+.peak-semana {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.peak-semana-imagen {
+    width: 45%;
+    text-align: center;
+}
+
+.peak-semana-imagen img {
+    width: 65%;
+}
+
+.peak-semana-texto {
+    width: 45%;
+}
+
+.peak-semana-texto h2 {
+    font-family: "Joti One", serif;
+    color: #C4C754;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+.peak-semana-texto p {
+    line-height: 1.4em;
+}
+
+.estrellas {
+    color: #D1CC50;
+    font-size: 2em;
+    margin: 15px 0;
+}
+
+footer {
+    background-color: #D1CC50;
+    text-align: center;
+}
+
+
+.montanas-footer {
+    width: 102%;
+    height: 140px;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
+
+.footer-contenido {
+    width: 70%;
+    margin: auto;
+    padding: 15px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    width: 25%;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu li {
+    margin: 10px 0;
+}
+
+.footer-menu a {
+    color: #301208;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+
+.footer-centro {
+    width: 30%;
+}
+
+.logo-footer {
+    font-family: "Joti One", serif;
+    color: #F25D33;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.footer-centro p {
+    color: #F25D33;
+    font-size: 0.7em;
+    margin-top: 3px;
+}
+
+.footer-centro img {
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+.copyright {
+    padding: 5px 0 10px;
+    font-size: 0.6em;
+}
+
+@media screen and (max-width: 768px) {
+    .navegacion {
+        width: 95%;
+    }
+    .navegacion ul {
+        gap: 10px;
+    }
+    .logo {
+        font-size: 2em !important;
+    }
+    .hero-imagen {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .contenido-sobre {
+        flex-wrap: wrap;
+    }
+    .bochas-izquierda,
+    .bochas-derecha {
+        width: 25%;
+    }
+    .texto-sobre {
+        width: 50%;
+    }
+    .bocha {
+        width: 90px;
+    }
+    .contenedor-productos {
+        flex-wrap: wrap;
+    }
+    .producto {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    .peak-semana {
+        flex-direction: column;
+    }
+    .peak-semana-imagen,
+    .peak-semana-texto {
+        width: 90%;
+    }
+    .peak-semana-texto {
+        margin-top: 30px;
+    }
+    .footer-contenido {
+        width: 90%;
+    }
+}
