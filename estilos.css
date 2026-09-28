@@ -57,6 +57,18 @@ header {
     line-height: 1;
 }
 
+/* icono usuario */
+
+.usuario-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario-nav .material-icons {
+    font-size: 24px;
+    color: #301208;
+}
 
 /* hero */
 
@@ -1073,6 +1085,783 @@ footer {
 
     .ranking-calificar-titulo h2 {
         font-size: 30px;
+    }
+
+}
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+    position: relative;
+    min-height: 780px;
+    background-color: #FEF1CF;
+
+    padding: 65px 20px 100px;
+
+    overflow: hidden;
+}
+
+
+/* ENCABEZADO */
+
+.contacto-encabezado {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin: 0 auto 40px;
+}
+
+
+.contacto-encabezado h1 {
+    font-family: "Joti One", serif;
+
+    font-size: 64px;
+    line-height: 1;
+
+    color: #301208;
+
+    margin: 0 0 12px;
+}
+
+
+.contacto-encabezado p {
+    font-size: 24px;
+    line-height: 1.25;
+
+    color: #301208;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario-contacto {
+    position: relative;
+    z-index: 2;
+
+    width: 700px;
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* CAMPOS */
+
+.campo-contacto {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+
+.campo-contacto input,
+.campo-contacto textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    background-color: #D9D9D9;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 23px;
+
+    color: #301208;
+
+    padding: 20px;
+}
+
+
+/* INPUTS */
+
+.campo-contacto input {
+    height: 70px;
+}
+
+
+/* MENSAJE */
+
+.campo-contacto textarea {
+    height: 240px;
+
+    resize: none;
+}
+
+
+/* PLACEHOLDER */
+
+.campo-contacto input::placeholder,
+.campo-contacto textarea::placeholder {
+    color: #F25D33;
+    opacity: 1;
+}
+
+
+/* =========================================
+   BOTÓN ENVIAR
+========================================= */
+
+.boton-enviar {
+    display: block;
+
+    margin: 42px auto 0;
+
+    border: none;
+
+    background-color: #CD7397;
+    color: #301208;
+
+    padding: 15px 45px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.boton-enviar:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   BOCHAS DECORATIVAS
+========================================= */
+
+.bocha-contacto {
+    position: absolute;
+
+    z-index: 1;
+
+    width: 145px;
+    height: auto;
+
+    pointer-events: none;
+}
+
+
+/* ARRIBA IZQUIERDA */
+
+.bocha-contacto-1 {
+    top: 115px;
+    left: 7%;
+}
+
+
+/* ARRIBA DERECHA */
+
+.bocha-contacto-2 {
+    top: 205px;
+    right: 6%;
+}
+
+
+/* ABAJO IZQUIERDA */
+
+.bocha-contacto-3 {
+    top: 470px;
+    left: 3%;
+}
+
+
+/* ABAJO DERECHA */
+
+.bocha-contacto-4 {
+    top: 560px;
+    right: 7%;
+}
+
+
+/* =========================================
+   RESPONSIVE CONTACTO
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contacto {
+        padding-top: 50px;
+    }
+
+
+    .contacto-encabezado h1 {
+        font-size: 48px;
+    }
+
+
+    .contacto-encabezado p {
+        font-size: 18px;
+    }
+
+
+    .formulario-contacto {
+        width: 600px;
+    }
+
+
+    .bocha-contacto {
+        width: 100px;
+        opacity: 0.7;
+    }
+
+
+    .bocha-contacto-1 {
+        left: -25px;
+    }
+
+
+    .bocha-contacto-2 {
+        right: -25px;
+    }
+
+
+    .bocha-contacto-3 {
+        left: -35px;
+    }
+
+
+    .bocha-contacto-4 {
+        right: -35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contacto {
+        min-height: auto;
+
+        padding: 40px 20px 80px;
+    }
+
+
+    .contacto-encabezado h1 {
+        font-size: 38px;
+    }
+
+
+    .contacto-encabezado p {
+        font-size: 16px;
+    }
+
+
+    .contacto-encabezado p br {
+        display: none;
+    }
+
+
+    .formulario-contacto {
+        max-width: 100%;
+    }
+
+
+    .campo-contacto input {
+        height: 60px;
+    }
+
+
+    .campo-contacto textarea {
+        height: 190px;
+    }
+
+
+    .campo-contacto input,
+    .campo-contacto textarea {
+        font-size: 18px;
+        padding: 17px;
+    }
+
+
+    .bocha-contacto {
+        display: none;
+    }
+
+}
+/* =========================================
+   MENSAJE ENVIADO
+========================================= */
+
+.mensaje-enviado {
+    position: relative;
+
+    min-height: 650px;
+
+    background-color: #FEF1CF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 20px 100px;
+
+    overflow: hidden;
+}
+
+
+/* CONTENIDO */
+
+.mensaje-enviado-contenido {
+    position: relative;
+    z-index: 2;
+
+    width: 700px;
+    max-width: 90%;
+
+    text-align: center;
+}
+
+
+/* TITULO */
+
+.mensaje-enviado-contenido h1 {
+    font-family: "Joti One", serif;
+
+    font-size: 55px;
+    line-height: 1;
+
+    color: #F25D33;
+
+    margin-bottom: 25px;
+}
+
+
+/* TEXTOS */
+
+.mensaje-gracias,
+.mensaje-respuesta {
+    font-size: 21px;
+    line-height: 1.4;
+
+    color: #301208;
+}
+
+.mensaje-gracias {
+    margin-bottom: 5px;
+}
+
+.mensaje-respuesta {
+    margin-bottom: 35px;
+}
+
+
+/* CAJA DEL MENSAJE */
+
+.mensaje-recibido {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background-color: #C8D9EC;
+
+    padding: 25px 35px;
+
+    margin: 0 auto 35px;
+
+    color: #301208;
+
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+.mensaje-recibido-titulo {
+    font-family: "Joti One", serif;
+
+    color: #8E1825;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+/* BOTON */
+
+.boton-volver {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   BOCHAS
+========================================= */
+
+.bocha-mensaje {
+    position: absolute;
+
+    width: 135px;
+    height: auto;
+
+    z-index: 1;
+}
+
+
+.bocha-mensaje-1 {
+    top: 80px;
+    left: 7%;
+}
+
+
+.bocha-mensaje-2 {
+    top: 130px;
+    right: 7%;
+}
+
+
+.bocha-mensaje-3 {
+    bottom: 80px;
+    left: 4%;
+}
+
+
+.bocha-mensaje-4 {
+    bottom: 60px;
+    right: 5%;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .mensaje-enviado-contenido h1 {
+        font-size: 42px;
+    }
+
+    .mensaje-gracias,
+    .mensaje-respuesta {
+        font-size: 18px;
+    }
+
+    .bocha-mensaje {
+        width: 95px;
+        opacity: 0.7;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .mensaje-enviado {
+        min-height: 550px;
+
+        padding: 60px 20px 80px;
+    }
+
+    .mensaje-enviado-contenido {
+        max-width: 100%;
+    }
+
+    .mensaje-enviado-contenido h1 {
+        font-size: 34px;
+    }
+
+    .mensaje-recibido {
+        padding: 20px;
+    }
+
+    .bocha-mensaje {
+        display: none;
+    }
+
+}
+/* =========================================
+   REGISTRO
+========================================= */
+
+.pagina-registro {
+    margin: 0;
+    padding: 0;
+
+    background-color: #FEF1CF;
+}
+
+
+/* PANTALLA COMPLETA */
+
+.registro {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    background-color: #FEF1CF;
+}
+
+
+/* =========================================
+   IMAGEN IZQUIERDA
+========================================= */
+
+.registro-imagen {
+    width: 40%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+
+.registro-imagen img {
+    width: 100%;
+    height: 100vh;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   CONTENIDO DERECHO
+========================================= */
+
+.registro-contenido {
+    width: 60%;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 45px 11%;
+}
+
+
+/* LOGO */
+
+.logo-registro {
+    position: absolute;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: "Joti One", serif;
+
+    font-size: 64px;
+
+    color: #F25D33;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   TITULO
+========================================= */
+
+.registro-titulo {
+    width: 100%;
+
+    margin-bottom: 40px;
+}
+
+
+.registro-titulo h1 {
+    font-family: "Joti One", serif;
+
+    font-size: 45px;
+    line-height: 1;
+
+    color: #F25D33;
+
+    margin: 0 0 10px;
+}
+
+
+.registro-titulo p {
+    font-size: 25px;
+
+    color: #F25D33;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario-registro {
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.campo-registro {
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+
+.campo-registro input {
+    width: 100%;
+    height: 78px;
+
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    background-color: #D9D9D9;
+
+    padding: 0 27px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    color: #301208;
+}
+
+
+.campo-registro input::placeholder {
+    color: #F25D33;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   BOTON
+========================================= */
+
+.boton-registro {
+    border: none;
+
+    background-color: #CD7397;
+
+    color: #301208;
+
+    padding: 16px 35px;
+
+    margin-top: 5px;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.boton-registro:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   YA TENES CUENTA
+========================================= */
+
+.ya-cuenta {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    color: #301208;
+}
+
+
+.ya-cuenta a {
+    color: #F25D33;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.ya-cuenta a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .registro-imagen {
+        width: 35%;
+    }
+
+
+    .registro-contenido {
+        width: 65%;
+
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+
+    .logo-registro {
+        font-size: 50px;
+    }
+
+
+    .registro-titulo h1 {
+        font-size: 38px;
+    }
+
+
+    .registro-titulo p {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .registro {
+        display: block;
+    }
+
+
+    .registro-imagen {
+        display: none;
+    }
+
+
+    .registro-contenido {
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 130px 30px 60px;
+    }
+
+
+    .campo-registro input {
+        height: 65px;
     }
 
 }
