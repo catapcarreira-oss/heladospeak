@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <link rel="stylesheet" href="estilos.css?v=2">
+    
 </head>
 
 <body>
@@ -21,6 +24,9 @@
             <ul>
                 <li><a href="ranking.php">RANKING</a></li>
                 <li><a href="contacto.php">CONTACTO</a></li>
+                <li><a href="registro.php" class="usuario-nav">
+                    <span class="material-icons">person</span></a>
+                </li>
             </ul>
         </nav>
     </header>
