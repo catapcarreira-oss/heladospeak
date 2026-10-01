@@ -1,4 +1,4 @@
-/* estilos generales */
+/*ESTILOS GENERALES*/
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@ body {
 }
 
 
-/* header */
+/*HEADER*/
 
 header {
     width: 100%;
@@ -30,7 +30,6 @@ header {
     width: 100%;
     margin: auto;
     padding: 20px 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,20 +56,8 @@ header {
     line-height: 1;
 }
 
-/* icono usuario */
 
-.usuario-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.usuario-nav .material-icons {
-    font-size: 24px;
-    color: #301208;
-}
-
-/* iconos navegacion */
+/*ICONOS DEL HEADER*/
 
 .buscar-nav,
 .usuario-nav {
@@ -85,7 +72,8 @@ header {
     color: #301208;
 }
 
-/* hero */
+
+/*INICIO - HERO*/
 
 .hero {
     width: 100%;
@@ -114,6 +102,9 @@ header {
     font-size: 1em;
 }
 
+
+/*BOTONES*/
+
 .boton {
     display: inline-block;
     background-color: #CD7397;
@@ -128,7 +119,7 @@ header {
 }
 
 
-/* sobre PEAK */
+/*SOBRE PEAK*/
 
 .sobre-peak {
     width: 100%;
@@ -175,7 +166,7 @@ header {
 }
 
 
-/* productos */
+/*PRODUCTOS*/
 
 .productos {
     width: 94%;
@@ -229,7 +220,7 @@ header {
 }
 
 
-/* franja de colores */
+/*FRANJA DE COLORES*/
 
 .franja-colores {
     width: 100%;
@@ -238,14 +229,13 @@ header {
 }
 
 
-/* peak de la semana */
+/*PEAK DE LA SEMANA*/
 
 .peak-semana {
     width: 70%;
     max-width: 1100px;
     margin: auto;
     padding: 5px 0 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +277,8 @@ header {
     margin: 10px 0;
 }
 
-/* footer */
+
+/*FOOTER*/
 
 footer {
     width: 100%;
@@ -361,7 +352,8 @@ footer {
     font-size: 0.6em;
 }
 
-/* hero sabores */
+
+/*SABORES - HERO*/
 
 .hero-sabores {
     width: 100%;
@@ -391,7 +383,7 @@ footer {
 }
 
 
-/* fondo derretido sabores */
+/*SABORES - FONDO*/
 
 .fondo-lineas-sabores {
     width: 100%;
@@ -401,7 +393,7 @@ footer {
 }
 
 
-/* lineas de sabores */
+/*SABORES - LINEAS*/
 
 .linea-sabores {
     width: 100%;
@@ -433,7 +425,7 @@ footer {
 }
 
 
-/* productos sabores */
+/*SABORES - PRODUCTOS*/
 
 .grid-sabores {
     width: 100%;
@@ -472,7 +464,7 @@ footer {
 }
 
 
-/* linea PRO */
+/*SABORES - PRO*/
 
 .linea-pro {
     color: #FEF1CF;
@@ -489,7 +481,7 @@ footer {
 }
 
 
-/* linea PLANT */
+/*SABORES - PLANT*/
 
 .linea-plant {
     color: #301208;
@@ -502,7 +494,7 @@ footer {
 }
 
 
-/* linea PURE */
+/*SABORES - PURE*/
 
 .linea-pure {
     color: #CD7397;
@@ -515,15 +507,12 @@ footer {
 }
 
 
-/* ranking */
+/*RANKING*/
 
 .pagina-ranking {
     background-color: #FEF1CF;
     overflow: hidden;
 }
-
-
-/* hero ranking */
 
 .ranking-hero {
     width: 100%;
@@ -538,329 +527,139 @@ footer {
     display: block;
 }
 
-
-/* franja */
-
 .ranking-franja {
     width: 100%;
     height: 34px;
-
-    background:
-        repeating-linear-gradient(
-            90deg,
-            #C4C754 0px,
-            #C4C754 34px,
-            #CD7397 34px,
-            #CD7397 68px
-        );
+    background: repeating-linear-gradient(
+        90deg,
+        #C4C754 0px,
+        #C4C754 34px,
+        #CD7397 34px,
+        #CD7397 68px
+    );
 }
 
 
-/* peak de la semana */
+/*RANKING - PEAK DE LA SEMANA*/
 
 .ranking-semana {
     max-width: 1100px;
     margin: 0 auto;
-
     padding: 80px 40px 65px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 100px;
 }
 
-
 .ranking-semana-producto {
     width: 390px;
-    position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .ranking-semana-pote {
     width: 290px;
     display: block;
-    position: relative;
-    z-index: 2;
 }
-
-
-/* circulos */
-
-.ranking-circulos {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-    left: 0;
-}
-
-
-.circulo {
-    position: absolute;
-
-    width: 68px;
-    height: 68px;
-
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    font-size: 11px;
-    line-height: 1.1;
-
-    z-index: 3;
-}
-
-
-.circulo-pro {
-    background-color: #CD7397;
-    color: #301208;
-
-    top: 15px;
-    right: 15px;
-}
-
-
-.circulo-proteina {
-    background-color: #301208;
-    color: #FFF7E4;
-
-    top: 120px;
-    right: 0;
-}
-
-
-.circulo-chocolate {
-    background-color: #301208;
-    color: #FFF7E4;
-
-    bottom: 65px;
-    left: 0;
-}
-
-
-.circulo-cremoso {
-    background-color: #CD7397;
-    color: #301208;
-
-    bottom: 30px;
-    right: 15px;
-}
-
-
-.circulo-brownie {
-    background-color: #CD7397;
-    color: #301208;
-
-    top: 75px;
-    left: 0;
-}
-
-
-/* texto peak semana */
 
 .ranking-semana-info {
     width: 420px;
 }
 
-
 .ranking-semana-info h1 {
     font-family: "Joti One", serif;
-
     color: #C4C754;
-
     font-size: 38px;
     line-height: 1.05;
-
     margin: 0 0 22px;
 }
 
-
 .ranking-semana-info p {
     color: #301208;
-
     font-size: 16px;
     line-height: 1.4;
-
     margin: 0 0 15px;
 }
 
-
 .ranking-estrellas-semana {
     color: #C4C754;
-
     font-size: 28px;
     letter-spacing: 2px;
-
     margin: 10px 0 18px;
 }
 
-
 .ranking-boton {
     display: inline-block;
-
     background-color: #CD7397;
     color: #301208;
-
     text-decoration: none;
-
     padding: 10px 20px;
-
     font-size: 12px;
     font-weight: bold;
 }
 
 
-/* calificar */
+/*RANKING - CALIFICACIONES*/
 
 .ranking-calificar {
     max-width: 1250px;
     margin: 0 auto;
-
     padding: 35px 40px 90px;
 }
 
-
 .ranking-calificar-titulo {
     text-align: center;
-
     margin-bottom: 50px;
 }
 
-
 .ranking-calificar-titulo h2 {
     font-family: "Joti One", serif;
-
     color: #F25D33;
-
     font-size: 38px;
     line-height: 1;
-
     margin: 0;
 }
 
-
-/* grilla */
-
 .ranking-productos {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     column-gap: 45px;
     row-gap: 45px;
 }
-
 
 .ranking-producto {
     text-align: center;
 }
 
-
 .ranking-producto img {
     width: 100%;
     max-width: 215px;
-
     height: 240px;
-
     object-fit: contain;
-
     display: block;
-
     margin: 0 auto 5px;
 }
 
-
 .ranking-producto h3 {
     color: #301208;
-
     font-size: 16px;
     font-weight: normal;
-
     margin: 0 0 2px;
 }
-
 
 .ranking-producto.ranking-pure h3 {
     color: #CD7397;
 }
 
-
-/* estrellas productos */
-
 .ranking-estrellas {
-    color: #d8d8d8;
-
+    color: #D8D8D8;
     font-size: 28px;
     line-height: 1;
-
     letter-spacing: -2px;
-
-    cursor: pointer;
 }
 
-
-/* top 3 */
-
-.ranking-top {
-    width: 100%;
-
-    text-align: center;
-
-    padding-top: 25px;
-
-    background-color: #FEF1CF;
-
-    line-height: normal;
-}
-
-
-.ranking-top-texto {
-    margin-bottom: 25px;
-}
-
-
-.ranking-top-texto h2 {
-    font-family: "Joti One", serif;
-
-    color: #F25D33;
-
-    font-size: 31px;
-
-    margin: 0 0 8px;
-}
-
-
-.ranking-top-texto p {
-    color: #F25D33;
-
-    font-size: 14px;
-    line-height: 1.4;
-
-    margin: 0;
-}
-
-
-.ranking-top-imagen {
-    width: 100%;
-    height: auto;
-
-    display: block;
-
-    margin: 0;
-}
 
 /*CONTACTO*/
 
@@ -868,108 +667,70 @@ footer {
     position: relative;
     min-height: 780px;
     background-color: #FEF1CF;
-
     padding: 65px 20px 100px;
-
     overflow: hidden;
 }
-
-
-/* ENCABEZADO */
 
 .contacto-encabezado {
     position: relative;
     z-index: 2;
-
     text-align: center;
-
     margin: 0 auto 40px;
 }
 
-
 .contacto-encabezado h1 {
     font-family: "Joti One", serif;
-
     font-size: 64px;
     line-height: 1;
-
     color: #301208;
-
     margin: 0 0 12px;
 }
-
 
 .contacto-encabezado p {
     font-size: 24px;
     line-height: 1.25;
-
     color: #301208;
-
     margin: 0;
 }
 
 
-/*FORMULARIO*/
+/*FORMULARIO CONTACTO*/
 
 .formulario-contacto {
     position: relative;
     z-index: 2;
-
     width: 700px;
     max-width: 90%;
-
     margin: 0 auto;
-
     text-align: center;
 }
-
-
-/* CAMPOS */
 
 .campo-contacto {
     width: 100%;
     margin-bottom: 18px;
 }
 
-
 .campo-contacto input,
 .campo-contacto textarea {
     width: 100%;
-
     box-sizing: border-box;
-
     border: none;
     outline: none;
-
     background-color: #D9D9D9;
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 23px;
-
     color: #301208;
-
     padding: 20px;
 }
-
-
-/* INPUTS */
 
 .campo-contacto input {
     height: 70px;
 }
 
-
-/* MENSAJE */
-
 .campo-contacto textarea {
     height: 240px;
-
     resize: none;
 }
-
-
-/* PLACEHOLDER */
 
 .campo-contacto input::placeholder,
 .campo-contacto textarea::placeholder {
@@ -977,72 +738,42 @@ footer {
     opacity: 1;
 }
 
-
-/*BOTÓN ENVIAR*/
-
 .boton-enviar {
     display: block;
-
     margin: 42px auto 0;
-
     border: none;
-
     background-color: #CD7397;
     color: #301208;
-
     padding: 15px 45px;
-
     font-size: 20px;
     font-weight: bold;
-
     cursor: pointer;
 }
 
 
-.boton-enviar:hover {
-    transform: scale(1.04);
-}
-
-
-/*BOCHAS DECORATIVAS*/
+/*BOCHAS CONTACTO*/
 
 .bocha-contacto {
     position: absolute;
-
     z-index: 1;
-
     width: 145px;
     height: auto;
-
-    pointer-events: none;
 }
-
-
-/* ARRIBA IZQUIERDA */
 
 .bocha-contacto-1 {
     top: 115px;
     left: 7%;
 }
 
-
-/* ARRIBA DERECHA */
-
 .bocha-contacto-2 {
     top: 205px;
     right: 6%;
 }
 
-
-/* ABAJO IZQUIERDA */
-
 .bocha-contacto-3 {
     top: 470px;
     left: 3%;
 }
-
-
-/* ABAJO DERECHA */
 
 .bocha-contacto-4 {
     top: 560px;
@@ -1050,143 +781,111 @@ footer {
 }
 
 
-
 /*MENSAJE ENVIADO*/
 
 .mensaje-enviado {
     position: relative;
-
     min-height: 650px;
-
     background-color: #FEF1CF;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 70px 20px 100px;
-
     overflow: hidden;
 }
-
-
-/* CONTENIDO */
 
 .mensaje-enviado-contenido {
     position: relative;
     z-index: 2;
-
     width: 700px;
     max-width: 90%;
-
     text-align: center;
 }
 
+.respuesta-contacto {
+    width: 650px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
 
-/* TITULO */
-
-.mensaje-enviado-contenido h1 {
+.respuesta-contacto h1 {
     font-family: "Joti One", serif;
-
     font-size: 55px;
     line-height: 1;
-
     color: #F25D33;
-
     margin-bottom: 25px;
 }
 
-
-/* TEXTOS */
-
-.mensaje-gracias,
-.mensaje-respuesta {
+.mensaje-gracias {
     font-size: 21px;
     line-height: 1.4;
-
     color: #301208;
-}
-
-.mensaje-gracias {
     margin-bottom: 5px;
 }
 
 .mensaje-respuesta {
+    font-size: 19px;
+    line-height: 1.4;
+    color: #301208;
     margin-bottom: 35px;
 }
 
-
-/* CAJA DEL MENSAJE */
-
 .mensaje-recibido {
     width: 100%;
-
+    max-width: 500px;
     box-sizing: border-box;
-
     background-color: #C8D9EC;
-
     padding: 25px 35px;
-
     margin: 0 auto 35px;
-
     color: #301208;
-
     font-size: 18px;
     line-height: 1.4;
+    text-align: left;
 }
-
 
 .mensaje-recibido-titulo {
     font-family: "Joti One", serif;
-
-    color: #8E1825;
-
+    color: #F25D33;
     font-size: 22px;
-
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-
-/* BOTON */
-
 .boton-volver {
-    display: inline-block;
+    margin-top: 20px;
+}
 
-    margin-top: 5px;
-
-    text-decoration: none;
+.respuesta-error {
+    background-color: #C8D9EC;
+    padding: 50px;
+    max-width: 550px;
 }
 
 
-/*BOCHAS*/
+/*BOCHAS MENSAJE*/
 
 .bocha-mensaje {
     position: absolute;
-
     width: 135px;
     height: auto;
-
     z-index: 1;
 }
-
 
 .bocha-mensaje-1 {
     top: 80px;
     left: 7%;
 }
 
-
 .bocha-mensaje-2 {
     top: 130px;
     right: 7%;
 }
 
-
 .bocha-mensaje-3 {
     bottom: 80px;
     left: 4%;
 }
-
 
 .bocha-mensaje-4 {
     bottom: 60px;
@@ -1194,218 +893,135 @@ footer {
 }
 
 
-
 /*REGISTRO*/
 
 .pagina-registro {
     margin: 0;
     padding: 0;
-
     background-color: #FEF1CF;
 }
-
-
-/* PANTALLA COMPLETA */
 
 .registro {
     width: 100%;
     min-height: 100vh;
-
     display: flex;
-
     background-color: #FEF1CF;
 }
-
-
-/*IMAGEN IZQUIERDA*/
 
 .registro-imagen {
     width: 40%;
     min-height: 100vh;
-
     overflow: hidden;
 }
-
 
 .registro-imagen img {
     width: 100%;
     height: 100vh;
-
     display: block;
-
     object-fit: cover;
 }
-
-
-/*CONTENIDO DERECHO*/
 
 .registro-contenido {
     width: 60%;
     min-height: 100vh;
-
-    box-sizing: border-box;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 45px 11%;
 }
 
-
-/* LOGO */
-
 .logo-registro {
     position: absolute;
-
     top: 35px;
     left: 50%;
-
     transform: translateX(-50%);
-
     font-family: "Joti One", serif;
-
     font-size: 64px;
-
     color: #F25D33;
-
     text-decoration: none;
 }
 
-
-/*TITULO*/
-
 .registro-titulo {
     width: 100%;
-
     margin-bottom: 40px;
 }
 
-
 .registro-titulo h1 {
     font-family: "Joti One", serif;
-
     font-size: 45px;
     line-height: 1;
-
     color: #F25D33;
-
     margin: 0 0 10px;
 }
 
-
 .registro-titulo p {
     font-size: 25px;
-
     color: #F25D33;
-
     margin: 0;
 }
 
 
-/* FORMULARIO */
+/*FORMULARIO REGISTRO*/
 
 .formulario-registro {
     width: 100%;
-
     text-align: center;
 }
 
-
 .campo-registro {
     width: 100%;
-
     margin-bottom: 25px;
 }
-
 
 .campo-registro input {
     width: 100%;
     height: 78px;
-
-    box-sizing: border-box;
-
     border: none;
     outline: none;
-
     background-color: #D9D9D9;
-
     padding: 0 27px;
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 18px;
-
     color: #301208;
 }
-
 
 .campo-registro input::placeholder {
     color: #F25D33;
-
     opacity: 1;
 }
 
-
-/*BOTON*/
-
 .boton-registro {
     border: none;
-
     background-color: #CD7397;
-
     color: #301208;
-
     padding: 16px 35px;
-
     margin-top: 5px;
-
     font-size: 21px;
     font-weight: bold;
-
     cursor: pointer;
 }
 
-
-.boton-registro:hover {
-    transform: scale(1.04);
-}
-
-
-/*YA TENES CUENTA*/
-
 .ya-cuenta {
     text-align: center;
-
     margin-top: 20px;
-
     font-size: 15px;
-
     color: #301208;
 }
 
-
 .ya-cuenta a {
     color: #F25D33;
-
     font-weight: bold;
-
     text-decoration: none;
 }
 
 
-.ya-cuenta a:hover {
-    text-decoration: underline;
-}
-
+/*RESULTADO DEL REGISTRO*/
 
 .registro-exitoso,
 .registro-error {
     min-height: 100vh;
     background-color: #FEF1CF;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1445,76 +1061,4 @@ footer {
     font-weight: bold;
     border: 2px solid #301208;
     border-radius: 8px;
-}
-/* RESPUESTA FORMULARIO CONTACTO */
-
-.respuesta-contacto {
-    width: 650px;
-    margin: auto;
-    text-align: center;
-}
-
-.respuesta-contacto h1 {
-    font-family: "Joti One", serif;
-    font-size: 55px;
-    color: #301208;
-    margin-bottom: 25px;
-}
-
-.respuesta-contacto .mensaje-gracias {
-    font-size: 24px;
-    color: #301208;
-    margin-bottom: 12px;
-}
-
-.respuesta-contacto .mensaje-respuesta {
-    font-size: 19px;
-    color: #301208;
-    margin-bottom: 30px;
-}
-
-
-/* CAJA CON EL MENSAJE QUE ENVIÓ */
-
-.respuesta-exito .mensaje-recibido {
-    background-color: #C8D9EC;
-    padding: 25px 30px;
-    margin: 30px auto;
-    max-width: 500px;
-    text-align: left;
-}
-
-.respuesta-exito .mensaje-recibido-titulo {
-    font-weight: bold;
-    color: #F25D33;
-    margin-bottom: 10px;
-}
-
-
-/* BOTONES */
-
-.respuesta-contacto .boton-volver {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-
-    background-color: #CD7397;
-    color: #301208;
-
-    border: 2px solid #301208;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-/* MENSAJE DE ERROR */
-
-.respuesta-error {
-    background-color: #C8D9EC;
-    padding: 50px;
-    max-width: 550px;
-}
-
-.respuesta-error h1 {
-    color: #F25D33;
 }
