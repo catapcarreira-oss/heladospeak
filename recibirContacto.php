@@ -17,6 +17,7 @@
 <body>
 
     <header>
+
         <nav class="navegacion">
 
             <ul>
@@ -32,7 +33,32 @@
             </ul>
 
         </nav>
+
     </header>
+
+
+    <?php
+
+    /* CONEXIÓN A LA BASE DE DATOS */
+
+    $conexion = mysqli_connect("localhost", "root", "", "sitiopeak");
+
+
+    /* DATOS QUE VIENEN DEL FORMULARIO */
+
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['mensaje'];
+
+
+    /* GUARDAR LOS DATOS EN LA TABLA CONTACTO */
+
+    $consulta = "INSERT INTO contacto (nombre, email, mensaje)
+                 VALUES ('$nombre', '$email', '$mensaje')";
+
+    $resultado = mysqli_query($conexion, $consulta);
+
+    ?>
 
 
     <main>
@@ -60,41 +86,77 @@
 
             <div class="mensaje-enviado-contenido">
 
-                <h1>¡RECIBIMOS TU MENSAJE!</h1>
 
-                <p class="mensaje-gracias">
-                    Gracias
-                    <strong>
-                        <?php echo $_POST['nombre']; ?>
-                    </strong>,
-                    por escribirnos.
-                </p>
-
-                <p class="mensaje-respuesta">
-                    Vamos a responderte a
-                    <strong>
-                        <?php echo $_POST['email']; ?>
-                    </strong>
-                    lo antes posible.
-                </p>
+                <?php if ($resultado) { ?>
 
 
-                <div class="mensaje-recibido">
+                    <!-- SI EL MENSAJE SE GUARDÓ CORRECTAMENTE -->
 
-                    <p class="mensaje-recibido-titulo">
-                        TU MENSAJE
-                    </p>
+                    <div class="respuesta-contacto respuesta-exito">
 
-                    <p>
-                        <?php echo $_POST['mensaje']; ?>
-                    </p>
+                        <h1>¡RECIBIMOS TU MENSAJE!</h1>
 
-                </div>
+                        <p class="mensaje-gracias">
+                            Gracias
+                            <strong><?php echo $nombre; ?></strong>,
+                            por escribirnos.
+                        </p>
+
+                        <p class="mensaje-respuesta">
+                            Vamos a responderte a
+                            <strong><?php echo $email; ?></strong>
+                            lo antes posible.
+                        </p>
 
 
-                <a href="index.php" class="boton boton-volver">
-                    VOLVER AL INICIO
-                </a>
+                        <div class="mensaje-recibido">
+
+                            <p class="mensaje-recibido-titulo">
+                                TU MENSAJE
+                            </p>
+
+                            <p>
+                                <?php echo $mensaje; ?>
+                            </p>
+
+                        </div>
+
+
+                        <a href="index.php" class="boton boton-volver">
+                            VOLVER AL INICIO
+                        </a>
+
+                    </div>
+
+
+                <?php } else { ?>
+
+
+                    <!-- SI HUBO UN ERROR -->
+
+                    <div class="respuesta-contacto respuesta-error">
+
+                        <h1>¡UPS!</h1>
+
+                        <p class="mensaje-gracias">
+                            Algo salió mal.
+                        </p>
+
+                        <p class="mensaje-respuesta">
+                            No pudimos enviar tu mensaje.
+                            Por favor, volvé a intentarlo.
+                        </p>
+
+
+                        <a href="contacto.php" class="boton boton-volver">
+                            VOLVER A INTENTAR
+                        </a>
+
+                    </div>
+
+
+                <?php } ?>
+
 
             </div>
 
@@ -109,15 +171,18 @@
              alt=""
              class="montanas-footer">
 
+
         <div class="footer-contenido">
 
             <nav class="footer-menu">
+
                 <ul>
                     <li><a href="index.php">INICIO</a></li>
                     <li><a href="sabores.php">SABORES</a></li>
                     <li><a href="#">SOBRE</a></li>
                     <li><a href="contacto.php">CONTACTO</a></li>
                 </ul>
+
             </nav>
 
 
@@ -136,15 +201,18 @@
 
 
             <nav class="footer-menu">
+
                 <ul>
                     <li><a href="sabores.php">PRO</a></li>
                     <li><a href="sabores.php">PLANT</a></li>
                     <li><a href="sabores.php">PURE</a></li>
                     <li><a href="ranking.php">ENCONTRÁ TU PEAK</a></li>
                 </ul>
+
             </nav>
 
         </div>
+
 
         <p class="copyright">
             © 2026 PEAK · Buenos Aires, Argentina · Todos los derechos reservados
@@ -153,4 +221,5 @@
     </footer>
 
 </body>
+
 </html>
