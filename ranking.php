@@ -60,30 +60,6 @@
 
             <div class="ranking-semana-producto">
 
-                <div class="ranking-circulos">
-
-                    <span class="circulo circulo-pro">
-                        PRO
-                    </span>
-
-                    <span class="circulo circulo-proteina">
-                        ALTO EN<br>PROTEÍNA
-                    </span>
-
-                    <span class="circulo circulo-chocolate">
-                        Chocolate
-                    </span>
-
-                    <span class="circulo circulo-cremoso">
-                        Cremoso
-                    </span>
-
-                    <span class="circulo circulo-brownie">
-                        Con<br>brownie
-                    </span>
-
-                </div>
-
                 <img
                     src="img-/chocolate-brownie-pro.png"
                     alt="Chocolate Brownie PRO"
@@ -316,31 +292,6 @@
                 </article>
 
             </div>
-
-        </section>
-
-
-        <!-- top 3 -->
-
-        <section class="ranking-top">
-
-            <div class="ranking-top-texto">
-
-                <h2>
-                    TOP 3 DE LA SEMANA
-                </h2>
-
-                <p>
-                    La comunidad eligió sus favoritos.<br>
-                    Estos son los PEAK que llegaron más alto.
-                </p>
-
-            </div>
-
-            <img
-                src="img-/top3.png"
-                alt="Top 3 de sabores PEAK"
-                class="ranking-top-imagen">
 
         </section>
 
