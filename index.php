@@ -17,6 +17,11 @@
     <header>
         <nav class="navegacion">
             <ul>
+                <li>
+                    <a href="#" class="buscar-nav">
+                        <span class="material-icons">search</span>
+                    </a>
+                </li>
                 <li><a href="index.php">INICIO</a></li>
                 <li><a href="sabores.php">SABORES</a></li>
             </ul>
