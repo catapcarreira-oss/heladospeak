@@ -1,5 +1,4 @@
 /*ESTILOS GENERALES*/
-
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +18,7 @@ body {
     font-family: "Neue Haas Grotesk Display Pro", Arial, sans-serif;
 }
 
-
 /*HEADER*/
-
 header {
     width: 100%;
 }
@@ -56,9 +53,7 @@ header {
     line-height: 1;
 }
 
-
 /*ICONOS DEL HEADER*/
-
 .buscar-nav,
 .usuario-nav {
     display: flex;
@@ -72,9 +67,7 @@ header {
     color: #301208;
 }
 
-
 /*INICIO - HERO*/
-
 .hero {
     width: 100%;
     text-align: center;
@@ -102,9 +95,7 @@ header {
     font-size: 1em;
 }
 
-
 /*BOTONES*/
-
 .boton {
     display: inline-block;
     background-color: #CD7397;
@@ -118,9 +109,7 @@ header {
     padding: 8px 25px;
 }
 
-
 /*SOBRE PEAK*/
-
 .sobre-peak {
     width: 100%;
 }
@@ -165,9 +154,7 @@ header {
     line-height: 1.5em;
 }
 
-
 /*PRODUCTOS*/
-
 .productos {
     width: 94%;
     margin: auto;
@@ -219,18 +206,14 @@ header {
     font-size: 0.9em;
 }
 
-
 /*FRANJA DE COLORES*/
-
 .franja-colores {
     width: 100%;
     max-width: 100%;
     display: block;
 }
 
-
 /*PEAK DE LA SEMANA*/
-
 .peak-semana {
     width: 70%;
     max-width: 1100px;
@@ -277,9 +260,7 @@ header {
     margin: 10px 0;
 }
 
-
 /*FOOTER*/
-
 footer {
     width: 100%;
     background-color: #D1CC50;
@@ -352,9 +333,7 @@ footer {
     font-size: 0.6em;
 }
 
-
 /*SABORES - HERO*/
-
 .hero-sabores {
     width: 100%;
     text-align: center;
@@ -382,9 +361,7 @@ footer {
     margin-top: 15px;
 }
 
-
 /*SABORES - FONDO*/
-
 .fondo-lineas-sabores {
     width: 100%;
     background-image: url("img-/fondoderretido.png");
@@ -392,9 +369,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-
 /*SABORES - LINEAS*/
-
 .linea-sabores {
     width: 100%;
     min-height: 600px;
@@ -424,9 +399,7 @@ footer {
     line-height: 1.4em;
 }
 
-
 /*SABORES - PRODUCTOS*/
-
 .grid-sabores {
     width: 100%;
     display: flex;
@@ -463,9 +436,7 @@ footer {
     margin-top: 2px;
 }
 
-
 /*SABORES - PRO*/
-
 .linea-pro {
     color: #FEF1CF;
 }
@@ -480,9 +451,7 @@ footer {
     color: #FEF1CF;
 }
 
-
 /*SABORES - PLANT*/
-
 .linea-plant {
     color: #301208;
 }
@@ -493,9 +462,7 @@ footer {
     color: #301208;
 }
 
-
 /*SABORES - PURE*/
-
 .linea-pure {
     color: #CD7397;
 }
@@ -506,9 +473,7 @@ footer {
     color: #CD7397;
 }
 
-
 /*RANKING*/
-
 .pagina-ranking {
     background-color: #FEF1CF;
     overflow: hidden;
@@ -539,9 +504,7 @@ footer {
     );
 }
 
-
 /*RANKING - PEAK DE LA SEMANA*/
-
 .ranking-semana {
     max-width: 1100px;
     margin: 0 auto;
@@ -600,9 +563,7 @@ footer {
     font-weight: bold;
 }
 
-
 /*RANKING - CALIFICACIONES*/
-
 .ranking-calificar {
     max-width: 1250px;
     margin: 0 auto;
@@ -660,9 +621,7 @@ footer {
     letter-spacing: -2px;
 }
 
-
 /*CONTACTO*/
-
 .contacto {
     position: relative;
     min-height: 780px;
@@ -693,9 +652,7 @@ footer {
     margin: 0;
 }
 
-
 /*FORMULARIO CONTACTO*/
-
 .formulario-contacto {
     position: relative;
     z-index: 2;
@@ -750,9 +707,7 @@ footer {
     cursor: pointer;
 }
 
-
 /*BOCHAS CONTACTO*/
-
 .bocha-contacto {
     position: absolute;
     z-index: 1;
@@ -780,9 +735,7 @@ footer {
     right: 7%;
 }
 
-
 /*MENSAJE ENVIADO*/
-
 .mensaje-enviado {
     position: relative;
     min-height: 650px;
@@ -862,9 +815,7 @@ footer {
     max-width: 550px;
 }
 
-
 /*BOCHAS MENSAJE*/
-
 .bocha-mensaje {
     position: absolute;
     width: 135px;
@@ -892,9 +843,7 @@ footer {
     right: 5%;
 }
 
-
 /*REGISTRO*/
-
 .pagina-registro {
     margin: 0;
     padding: 0;
@@ -961,9 +910,7 @@ footer {
     margin: 0;
 }
 
-
 /*FORMULARIO REGISTRO*/
-
 .formulario-registro {
     width: 100%;
     text-align: center;
@@ -1015,9 +962,7 @@ footer {
     text-decoration: none;
 }
 
-
 /*RESULTADO DEL REGISTRO*/
-
 .registro-exitoso,
 .registro-error {
     min-height: 100vh;
