@@ -15,32 +15,21 @@
 </head>
 
 <body>
-
-    <!-- HEADER -->
-
     <header>
         <nav class="navegacion">
-
             <ul>
                 <li><a href="index.php">INICIO</a></li>
                 <li><a href="sabores.php">SABORES</a></li>
             </ul>
-
             <a href="index.php" class="logo">PEAK</a>
-
             <ul>
                 <li><a href="ranking.php">RANKING</a></li>
                 <li><a href="contacto.php">CONTACTO</a></li>
             </ul>
-
         </nav>
     </header>
 
-
     <main>
-
-        <!-- CONTACTO -->
-
         <section class="contacto">
 
             <!-- BOCHAS DECORATIVAS -->
